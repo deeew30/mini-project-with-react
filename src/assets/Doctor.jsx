@@ -21,31 +21,24 @@ function Doctor() {
     <div className="App">
       <h1>Doctor Profile</h1>
       <div>
-        <p>Name: {doctor.name}</p>
-        <p>Specialty: {doctor.specialty}</p>
-        <p>Contact: {doctor.contact}</p>
+        <p>Name: Dr. Smith</p>
+        <p>Gender: MALE</p>
+        <p>address: gdn</p>
+        <p>Country: INDIA</p>
+        <p>Phone no: 19781216</p>
+        <p>Email:hospital@gmail.com</p>
+       
       </div>
 
       <h2>Medical History</h2>
-      <div>
-        <textarea
-          rows="4"
-          cols="50"
-          placeholder="Add medical history entry"
-          value={newEntry}
-          onChange={(e) => setNewEntry(e.target.value)}
-        ></textarea>
-        <button onClick={handleAddEntry}>Add Entry</button>
-      </div>
+      <p>PATIENT NAME:Ajitem</p>
+      <p>Email:ajitem@gmail.com</p>
+      <p>Diagnosis:nigga</p>
+      <p>Priscription:sunscream</p>
 
-      <div>
-        {medicalHistory.map((entry, index) => (
-          <div key={index}>
-            <p>{entry}</p>
-          </div>
-        ))}
-      </div>
+           
     </div>
+    
   );
 }
 
