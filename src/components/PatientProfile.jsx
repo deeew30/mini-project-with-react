@@ -11,8 +11,9 @@ export default function PatientProfile() {
     <Card sx={{ maxWidth: 700 }}>
       <CardMedia
         alt="green iguana"
-        height="30"
+        height="200"
         style={{ border: "2px solid black" }}
+        
         
       />
       <CardContent>
@@ -20,7 +21,12 @@ export default function PatientProfile() {
           Patient Profile
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Rahul
+        <p> Name:'Rahul'</p>
+        <p> Age:'30'</p>
+        <p> Gender:'male'</p>
+        <p> Bloodgroup:'A+'</p>
+        <p> Email:'rahulyadav@gmail.com'</p>
+        <p> Contact No:'123-456-7890'</p>
         </Typography>
       </CardContent>
       <CardActions>
