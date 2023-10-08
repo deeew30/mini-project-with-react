@@ -8,20 +8,19 @@ import Typography from '@mui/material/Typography';
 
 export default function PatientProfile() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 700 }}>
       <CardMedia
-        component="img"
         alt="green iguana"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
+        height="30"
+        style={{ border: "2px solid black" }}
+        
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          Patient Profile
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          Rahul
         </Typography>
       </CardContent>
       <CardActions>

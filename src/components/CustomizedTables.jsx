@@ -39,11 +39,9 @@ function createData(
 }
 
 const rows = [
-  createData('Frozen yoghurt', 159, 6.0, 24, 'my name is alex. i am an engineering student.i am in third year afhgvgfvfgfgfyfggfyguhbjjhj'),
-  createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-  createData('Eclair', 262, 16.0, 24, 6.0),
-  createData('Cupcake', 305, 3.7, 67, 4.3),
-  createData('Gingerbread', 356, 16.0, 49, 3.9),
+  createData('Saturday', '15.9.23', 'Prakash', 'Fever', 'Take Augmentin'),
+  createData('Monday', '23.9.23', 'Rahul', 'Cold', 'Cetrizine'),
+  createData('Wednesday', '26.9.23', 'Ravi', 'Tonsil', 'Zedex'),
 ];
 
 export default function CustomizedTables() {
@@ -54,9 +52,9 @@ export default function CustomizedTables() {
           <TableRow>
             <StyledTableCell>Day</StyledTableCell>
             <StyledTableCell align="right">Date</StyledTableCell>
-            <StyledTableCell align="right">Doctor&nbsp;(g)</StyledTableCell>
-            <StyledTableCell align="right">Diagnosis&nbsp;(g)</StyledTableCell>
-            <StyledTableCell align="right">Prescription&nbsp;(g)</StyledTableCell>
+            <StyledTableCell align="right">Doctor&nbsp;</StyledTableCell>
+            <StyledTableCell align="right">Diagnosis&nbsp;</StyledTableCell>
+            <StyledTableCell align="right">Prescription&nbsp;</StyledTableCell>
           </TableRow>
         </TableHead>
        <TableBody>
