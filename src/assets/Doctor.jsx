@@ -36,6 +36,11 @@ function Doctor() {
       <p>Diagnosis:nigga</p>
       <p>Priscription:sunscream</p>
 
+      <div>
+       <p> See/Update Existing Record</p>
+      
+      <p>Create New Record</p></div>
+
            
     </div>
     

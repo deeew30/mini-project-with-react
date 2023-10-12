@@ -35,7 +35,7 @@ export default function Login() {
 
   return (
     <>
-      Temporary Login page for testing
+      Login
       <div>
         <form>
           <input type="text" placeholder="Email" autoComplete="false" onChange={handleEmail}></input>
