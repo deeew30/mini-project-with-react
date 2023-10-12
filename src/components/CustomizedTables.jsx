@@ -7,6 +7,9 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import { useUserContext } from '../contexts/userContext';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -44,7 +47,28 @@ const rows = [
   createData('Wednesday', '26.9.23', 'Ravi', 'Tonsil', 'Zedex'),
 ];
 
-export default function CustomizedTables() {
+export default function CustomizedTables(Reports) {
+  const {user} = useUserContext();
+
+  const [reports, setReports] = useState([{}]);
+
+  useEffect(()=>{
+    async function getReports(userid){
+      const result = await axios.post("http://localhost:8000/api/fetch/reports", {
+        userid: userid
+      });
+
+      if(result.data[0]){
+        setReports(result.data);
+        console.log(result.data);
+      }
+    }
+
+    getReports(user.userid);
+    
+  }, []);
+
+
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
@@ -58,15 +82,15 @@ export default function CustomizedTables() {
           </TableRow>
         </TableHead>
        <TableBody>
-          {rows.map((row) => (
-            <StyledTableRow key={row.name}>
+          {reports.map((report) => (
+            <StyledTableRow key={report.R_ID}>
               <StyledTableCell component="th" scope="row">
-                {row.name}
+                {report.P_ID} Idk what to put here
               </StyledTableCell>
-              <StyledTableCell align="right">{row.calories}</StyledTableCell>
-              <StyledTableCell align="right">{row.fat}</StyledTableCell>
-              <StyledTableCell align="right">{row.carbs}</StyledTableCell>
-              <StyledTableCell align="right">{row.protein}</StyledTableCell>
+              <StyledTableCell align="right">{report.date}</StyledTableCell>
+              <StyledTableCell align="right">{report.D_ID}</StyledTableCell>
+              <StyledTableCell align="right">{report.Diagnosis}</StyledTableCell>
+              <StyledTableCell align="right">{report.Prescriptions}</StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>

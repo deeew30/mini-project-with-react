@@ -5,8 +5,12 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { useUserContext } from '../contexts/userContext';
 
 export default function PatientProfile() {
+
+  const {user} = useUserContext();
+
   return (
     <Card sx={{ maxWidth: 700 }}>
       <CardMedia
@@ -21,12 +25,12 @@ export default function PatientProfile() {
           Patient Profile
         </Typography>
         <Typography variant="body2" color="text.secondary">
-        <p> Name:'Rahul'</p>
-        <p> Age:'30'</p>
-        <p> Gender:'male'</p>
-        <p> Bloodgroup:'A+'</p>
-        <p> Email:'rahulyadav@gmail.com'</p>
-        <p> Contact No:'123-456-7890'</p>
+        <p> Name:'{user.name}'</p>
+        <p> Age:'30'not via database yet</p>
+        <p> Gender:'male'not via database yet</p>
+        <p> Bloodgroup:'{user.BG}'</p>
+        <p> Email:'{user.email}'</p>
+        <p> Contact No:'123-456-7890' not via db yet</p>
         </Typography>
       </CardContent>
       <CardActions>

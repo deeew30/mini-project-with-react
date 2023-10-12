@@ -1,11 +1,15 @@
 import PatientProfile from "../components/PatientProfile";
 import CustomizedTables from "../components/CustomizedTables";
 import "./Patie.css"
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useUserContext } from "../contexts/userContext";
+import axios from "axios";
 
 function Patie() {
   const [count, setCount] = useState(0);
-
+  const {user, setUser} = useUserContext();
+  console.log("user");
+  console.log(user)
   const patientData = {
     name: 'John Doe',
     age: '33',
@@ -33,6 +37,8 @@ function Patie() {
     // Add more medical history entries here
   ];
 
+  
+
   return (
     <div>
       {/* <div className="patient-profile">
@@ -45,7 +51,7 @@ function Patie() {
         <p>Bmi: {patientData.Bmi}</p> 
       </div> */}
       <PatientProfile></PatientProfile>
-<CustomizedTables></CustomizedTables>
+    <CustomizedTables></CustomizedTables>
 
     </div>
   );
