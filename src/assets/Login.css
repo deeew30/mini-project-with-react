@@ -1,0 +1,11 @@
+.LoginBox {
+    display :flex;
+    flex-direction:column;
+    max-width: 400px;
+    
+
+}
+form{
+    display: flex;
+    justify-content: center;
+}

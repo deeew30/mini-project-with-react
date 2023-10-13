@@ -1,3 +1,4 @@
+import './Login.css'
 import { useState } from "react";
 import { useUserContext } from "../contexts/userContext";
 import axios from "axios";
@@ -38,9 +39,10 @@ export default function Login() {
       Login
       <div>
         <form>
+          <div className="LoginBox">
           <input type="text" placeholder="Email" autoComplete="false" onChange={handleEmail}></input>
           <input type="password" placeholder="Password" autoComplete="false" onChange={handlePassword}></input>
-          
+          </div>
         </form>
         <div>
             <button onClick={handleLogin}>Login</button>

@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState } from 'react' 
 import './App.css'
 import Patie from './assets/patie'
 import Doctor from './assets/doctor'
@@ -36,3 +34,4 @@ function App() {
 }
 
 export default App
+
