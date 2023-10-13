@@ -1,5 +1,5 @@
 // src/components/HomePage.js
-
+import './Fonts.css'
 import './Home.css'
 import React from 'react';
 
@@ -7,7 +7,7 @@ function HomePage() {
   return (
     <div className="home-page">
       <header className="header">
-        <h1>Welcome to Our Medical Practice</h1>
+        <h1>Welcome to Medtracer</h1>
         <p>Your Health is Our Priority</p>
       </header>
       <section className="services">
@@ -24,11 +24,51 @@ function HomePage() {
         {/* Display doctor profiles or images here */}
       </section>
       <section className="contact">
-        <h2>Contact Us</h2>
+        <h2>Contact Us:
+          123-456-7890
+        </h2>
         <p>If you have any questions, feel free to contact us.</p>
         {/* Add contact information or a contact form */}
       </section>
-    </div>
+      <div class="footer-content">
+
+<div class="logo">
+
+</div>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et labore suscipit nisi non, laudantium delectu</p>
+
+<p1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, molestias!</p1>
+
+<div class="social-links">
+
+<i class="fa-brands fa-twitter"></i>
+
+<i class="fa-brands fa-facebook-f"></i>
+
+<i class="fa-brands fa-instagram"></i>
+
+<i class="fa-brands fa-youtube"></i> <i class="fa-brands fa-pinterest-p"></i>
+
+</div>
+
+</div>
+
+<div class="footer-bottom-content">
+
+<p>Designed By DANY</p>
+
+<div class="copyright">
+
+<p>&copy; Copyright <strong>Medtracer</strong>.All Rights Reserved</p>
+
+
+</div>
+
+</div>
+
+</div>
+    
   );
 }
 

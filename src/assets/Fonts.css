@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'YourCustomFont'; /* Give your font a name */
+    src: url('https://fonts.google.com/specimen/Courgette?classification=Handwriting');/* Specify the font file path and format */
+         
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'YourCustomFont', sans-serif; /* Use your custom font for the body text */
+  }
+  
