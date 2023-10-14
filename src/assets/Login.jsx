@@ -36,8 +36,9 @@ export default function Login() {
 
   return (
     <>
-      Login
+      
       <div>
+        <div>Login</div>
         <form>
           <div className="LoginBox">
           <input type="text" placeholder="Email" autoComplete="false" onChange={handleEmail}></input>
@@ -46,6 +47,7 @@ export default function Login() {
         </form>
         <div>
             <button onClick={handleLogin}>Login</button>
+            <button onClick={()=>navigate('/register')}>Register</button> 
         </div>
       </div>
     </>

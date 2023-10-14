@@ -47,7 +47,7 @@ const rows = [
   createData('Wednesday', '26.9.23', 'Ravi', 'Tonsil', 'Zedex'),
 ];
 
-export default function CustomizedTables(Reports) {
+export default function CustomizedTables() {
   const {user} = useUserContext();
 
   const [reports, setReports] = useState([{}]);

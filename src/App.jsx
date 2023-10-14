@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout'
 import Home from './assets/Home'
 import Login from './assets/Login'
+import Register from './assets/Register'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,7 +25,8 @@ function App() {
           <Route path='/login' element={<Login/>}/>
           <Route path='/patient' element={<Patie/>}/>
           <Route path='/doctor' element={<Doctor/>}/>
-          {/* <Route path='/login' element={<Login/>}/> */}
+          <Route path='/register' element={<Register/>}/>
+
         </Route>
       </Routes>
       
