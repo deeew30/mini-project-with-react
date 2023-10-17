@@ -23,7 +23,7 @@ function Doctor() {
       <div>
         <p>Name: Dr. Smith</p>
         <p>Gender: MALE</p>
-        <p>address: gdn</p>
+        <p>address: NEW PANVEL</p>
         <p>Country: INDIA</p>
         <p>Phone no: 19781216</p>
         <p>Email:hospital@gmail.com</p>
@@ -33,13 +33,13 @@ function Doctor() {
       <h2>Medical History</h2>
       <p>PATIENT NAME:Ajitem</p>
       <p>Email:ajitem@gmail.com</p>
-      <p>Diagnosis:nigga</p>
-      <p>Priscription:sunscream</p>
+      <p>Diagnosis:COLD</p>
+      <p>Priscription:MEDICONE</p>
 
       <div>
-       <p> See/Update Existing Record</p>
+       <p> SEE/UPDATE EXISTING RECORDS</p>
       
-      <p>Create New Record</p></div>
+      <p>CREATE NEW REDCORD</p></div>
 
            
     </div>

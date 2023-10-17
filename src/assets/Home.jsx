@@ -36,9 +36,9 @@ function HomePage() {
 
 </div>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et labore suscipit nisi non, laudantium delectu</p>
+<p>...</p>
 
-<p1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, molestias!</p1>
+<p1>....</p1>
 
 <div class="social-links">
 
