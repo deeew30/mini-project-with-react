@@ -11,7 +11,8 @@ export default function UserContextProvider({ children }) {
     DOB: "None",
     email: "None",
     password: "None",
-    contact: "None",   
+    contact: "None",  
+    gender: "None", 
     type: "None",
   };
 

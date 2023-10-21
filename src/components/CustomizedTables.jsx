@@ -74,8 +74,8 @@ export default function CustomizedTables() {
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell>Day</StyledTableCell>
-            <StyledTableCell align="right">Date</StyledTableCell>
+            {/* <StyledTableCell>Day</StyledTableCell> */}
+            <StyledTableCell align="left">Date</StyledTableCell>
             <StyledTableCell align="right">Doctor&nbsp;</StyledTableCell>
             <StyledTableCell align="right">Diagnosis&nbsp;</StyledTableCell>
             <StyledTableCell align="right">Prescription&nbsp;</StyledTableCell>
@@ -84,10 +84,10 @@ export default function CustomizedTables() {
        <TableBody>
           {reports.map((report) => (
             <StyledTableRow key={report.R_ID}>
-              <StyledTableCell component="th" scope="row">
-                {report.P_ID} Idk what to put here
-              </StyledTableCell>
-              <StyledTableCell align="right">{report.date}</StyledTableCell>
+              {/* <StyledTableCell component="th" scope="row">
+                {report.P_ID}
+              </StyledTableCell> */}
+              <StyledTableCell align="left">{report.date}</StyledTableCell>
               <StyledTableCell align="right">{report.D_ID}</StyledTableCell>
               <StyledTableCell align="right">{report.Diagnosis}</StyledTableCell>
               <StyledTableCell align="right">{report.Prescriptions}</StyledTableCell>
