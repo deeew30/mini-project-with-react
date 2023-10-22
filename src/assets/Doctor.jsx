@@ -45,6 +45,8 @@ function Doctor() {
   function handlePrescription(event){
     event.preventDefault();
     setPrescription(event.target.value);
+    setEmail("");
+    setEmail(tempEmail);
   }
 
   return (
