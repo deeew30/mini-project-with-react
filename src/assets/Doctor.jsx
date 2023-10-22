@@ -36,6 +36,7 @@ function Doctor() {
     })
     setEmail("");
     setEmail(tempEmail);
+    
 
     console.log(result);
   }
@@ -57,7 +58,7 @@ function Doctor() {
       <div>
         <p>Name: {user.name}</p>
         <p>Gender: {user.gender}</p>
-        <p>address: </p>
+       
         <p>Country: INDIA</p>
         <p>Phone no: {user.contact}</p>
         <p>Email: {user.email}</p>

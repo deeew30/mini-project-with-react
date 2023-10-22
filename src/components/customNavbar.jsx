@@ -29,7 +29,7 @@ export default function CustomNavbar() {
           </Typography>
           <Button color="inherit" onClick={()=>{navigator('/')}}>Home</Button>
           <Button color="inherit" onClick={()=>{navigator('/login')}}>Login</Button>
-          <Button color="inherit" onClick={()=>{navigator('/doctor')}}>Dashboard</Button>
+          {/* <Button color="inherit" onClick={()=>{navigator('/doctor')}}>Dashboard</Button> */}
           
         </Toolbar>
       </AppBar>
