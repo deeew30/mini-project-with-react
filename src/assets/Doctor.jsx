@@ -34,6 +34,8 @@ function Doctor() {
       diagnosis: diagnosis,
       prescriptions: prescription
     })
+    setEmail("");
+    setEmail(tempEmail);
 
     console.log(result);
   }
