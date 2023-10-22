@@ -8,6 +8,8 @@ import axios from "axios";
 function Patie() {
   const [count, setCount] = useState(0);
   const {user, setUser} = useUserContext();
+  const id = user.id;
+  
   console.log("user");
   console.log(user)
   const patientData = {
@@ -51,7 +53,7 @@ function Patie() {
         <p>Bmi: {patientData.Bmi}</p> 
       </div> */}
       <PatientProfile></PatientProfile>
-    <CustomizedTables></CustomizedTables>
+    <CustomizedTables props={id}></CustomizedTables>
 
     </div>
   );
